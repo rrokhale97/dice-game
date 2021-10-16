@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Dice Game</title>
+  </head>
+  <body>
+    <main>
+      <form class="form-container" id="form-container">
+        <h1 class="form-heading">Please Enter Game Details</h1>
+        <div class="input-boxes">
+          <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" id="input1" placeholder="Enter Player 1 Name" />
+          </div>
+          <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" id="input2" placeholder="Enter Player 2 Name" />
+          </div>
+          <div class="input-group">
+            <i class="fas fa-trophy"></i>
+            <input
+              type="number"
+              id="score"
+              placeholder="Challenging Score(10-100)"
+              min="10"
+              max="100"
+            />
+          </div>
+          <div class="input-group button">
+            <input type="button" class="submit" value="🎲 Play Game" />
+          </div>
+        </div>
+      </form>
+    </main>
+    <script src="js/input.js"></script>
+  </body>
+</html>
